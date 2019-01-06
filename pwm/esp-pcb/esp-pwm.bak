@@ -1,0 +1,348 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP-12E U2
+U 1 1 5C31E123
+P 5800 2900
+F 0 "U2" H 5800 3878 50  0000 C CNN
+F 1 "ESP-12E" H 5800 3787 50  0000 C CNN
+F 2 "RF_Module:ESP-12E" H 5800 2900 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 5450 3000 50  0001 C CNN
+	1    5800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 5C31E21D
+P 1400 1200
+F 0 "#PWR01" H 1400 1050 50  0001 C CNN
+F 1 "+12V" H 1415 1373 50  0000 C CNN
+F 2 "" H 1400 1200 50  0001 C CNN
+F 3 "" H 1400 1200 50  0001 C CNN
+	1    1400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5C31E256
+P 1550 4500
+F 0 "#PWR02" H 1550 4250 50  0001 C CNN
+F 1 "GND" H 1555 4327 50  0000 C CNN
+F 2 "" H 1550 4500 50  0001 C CNN
+F 3 "" H 1550 4500 50  0001 C CNN
+	1    1550 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1117-3.3 U1
+U 1 1 5C31E368
+P 3400 1200
+F 0 "U1" H 3400 1442 50  0000 C CNN
+F 1 "LM1117-3.3" H 3400 1351 50  0000 C CNN
+F 2 "" H 3400 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 3400 1200 50  0001 C CNN
+	1    3400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF540N Q3
+U 1 1 5C31E57D
+P 9400 3000
+F 0 "Q3" H 9605 3046 50  0000 L CNN
+F 1 "IRF540N" H 9605 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 9650 2925 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 9400 3000 50  0001 L CNN
+	1    9400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 5C31E6AE
+P 8250 2900
+F 0 "Q1" H 8441 2946 50  0000 L CNN
+F 1 "2N3904" H 8441 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8450 2825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8250 2900 50  0001 L CNN
+	1    8250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q2
+U 1 1 5C31E851
+P 8750 3450
+F 0 "Q2" H 8941 3496 50  0000 L CNN
+F 1 "2N3904" H 8941 3405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8950 3375 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8750 3450 50  0001 L CNN
+	1    8750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5C31E8CF
+P 6950 2300
+F 0 "SW2" H 6950 2585 50  0000 C CNN
+F 1 "SW_Push" H 6950 2494 50  0000 C CNN
+F 2 "" H 6950 2500 50  0001 C CNN
+F 3 "" H 6950 2500 50  0001 C CNN
+	1    6950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5C31EA3B
+P 4150 2300
+F 0 "SW1" H 4150 2585 50  0000 C CNN
+F 1 "SW_Push" H 4150 2494 50  0000 C CNN
+F 2 "" H 4150 2500 50  0001 C CNN
+F 3 "" H 4150 2500 50  0001 C CNN
+	1    4150 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3600 3400 3600
+Wire Wire Line
+	1550 3600 1550 4500
+Connection ~ 3400 3600
+Wire Wire Line
+	3400 3600 1550 3600
+Text GLabel 4500 750  1    50   Input ~ 0
+3v3
+Wire Wire Line
+	3700 1200 4500 1200
+Text GLabel 5800 800  1    50   Input ~ 0
+3v3
+Wire Wire Line
+	4500 750  4500 1200
+Wire Wire Line
+	5800 800  5800 1200
+$Comp
+L Device:R R6
+U 1 1 5C31EE1C
+P 8350 2300
+F 0 "R6" H 8420 2346 50  0000 L CNN
+F 1 "R" H 8420 2255 50  0000 L CNN
+F 2 "" V 8280 2300 50  0001 C CNN
+F 3 "~" H 8350 2300 50  0001 C CNN
+	1    8350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5C31F09E
+P 8800 2300
+F 0 "R7" H 8870 2346 50  0000 L CNN
+F 1 "R" H 8870 2255 50  0000 L CNN
+F 2 "" V 8730 2300 50  0001 C CNN
+F 3 "~" H 8800 2300 50  0001 C CNN
+	1    8800 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5C31F1D0
+P 7600 2900
+F 0 "R5" V 7393 2900 50  0000 C CNN
+F 1 "R" V 7484 2900 50  0000 C CNN
+F 2 "" V 7530 2900 50  0001 C CNN
+F 3 "~" H 7600 2900 50  0001 C CNN
+	1    7600 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 2900 8050 2900
+Wire Wire Line
+	8350 2450 8350 2600
+Wire Wire Line
+	8800 2450 8800 3000
+Wire Wire Line
+	8800 3250 8850 3250
+Wire Wire Line
+	8550 3450 8550 2600
+Wire Wire Line
+	8550 2600 8350 2600
+Connection ~ 8350 2600
+Wire Wire Line
+	8350 2600 8350 2700
+$Comp
+L power:GND #PWR03
+U 1 1 5C31F54F
+P 8400 4000
+F 0 "#PWR03" H 8400 3750 50  0001 C CNN
+F 1 "GND" H 8405 3827 50  0000 C CNN
+F 2 "" H 8400 4000 50  0001 C CNN
+F 3 "" H 8400 4000 50  0001 C CNN
+	1    8400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3650 8400 3650
+Wire Wire Line
+	8400 3650 8400 4000
+Wire Wire Line
+	8350 3100 8350 3650
+Wire Wire Line
+	8350 3650 8400 3650
+Connection ~ 8400 3650
+Wire Wire Line
+	9200 3000 8800 3000
+Connection ~ 8800 3000
+Wire Wire Line
+	8800 3000 8800 3250
+Text GLabel 1400 1500 3    50   Input ~ 0
+12v
+Wire Wire Line
+	1400 1200 1400 1500
+Text GLabel 2900 750  1    50   Input ~ 0
+12v
+Wire Wire Line
+	2900 1200 3100 1200
+Wire Wire Line
+	2900 750  2900 1200
+Text GLabel 8500 1150 1    50   Input ~ 0
+12v
+Wire Wire Line
+	8350 2150 8350 1450
+Wire Wire Line
+	8800 2150 8800 1450
+Wire Wire Line
+	8350 1450 8500 1450
+Connection ~ 8500 1450
+Wire Wire Line
+	8500 1450 8800 1450
+Wire Wire Line
+	8500 1150 8500 1450
+$Comp
+L Device:R R2
+U 1 1 5C320C90
+P 5000 1700
+F 0 "R2" H 5070 1746 50  0000 L CNN
+F 1 "R" H 5070 1655 50  0000 L CNN
+F 2 "" V 4930 1700 50  0001 C CNN
+F 3 "~" H 5000 1700 50  0001 C CNN
+	1    5000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C32113D
+P 4750 1700
+F 0 "R1" H 4820 1746 50  0000 L CNN
+F 1 "R" H 4820 1655 50  0000 L CNN
+F 2 "" V 4680 1700 50  0001 C CNN
+F 3 "~" H 4750 1700 50  0001 C CNN
+	1    4750 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5C32121F
+P 6750 3400
+F 0 "R4" H 6820 3446 50  0000 L CNN
+F 1 "R" H 6820 3355 50  0000 L CNN
+F 2 "" V 6680 3400 50  0001 C CNN
+F 3 "~" H 6750 3400 50  0001 C CNN
+	1    6750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5C3213BB
+P 6650 1650
+F 0 "R3" H 6720 1696 50  0000 L CNN
+F 1 "R" H 6720 1605 50  0000 L CNN
+F 2 "" V 6580 1650 50  0001 C CNN
+F 3 "~" H 6650 1650 50  0001 C CNN
+	1    6650 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1800 6650 2300
+Wire Wire Line
+	6650 2300 6400 2300
+Wire Wire Line
+	6400 3200 6750 3200
+Wire Wire Line
+	6750 3200 6750 3250
+Wire Wire Line
+	6750 3550 6750 3600
+Wire Wire Line
+	6750 3600 5800 3600
+Connection ~ 5800 3600
+Wire Wire Line
+	6650 2300 6750 2300
+Connection ~ 6650 2300
+Wire Wire Line
+	7150 2300 7150 3600
+Wire Wire Line
+	7150 3600 6750 3600
+Connection ~ 6750 3600
+Wire Wire Line
+	5200 2500 4750 2500
+Wire Wire Line
+	4750 2500 4750 1850
+Wire Wire Line
+	5200 2300 5000 2300
+Wire Wire Line
+	5000 2300 5000 1850
+Wire Wire Line
+	3400 1500 3400 2300
+Wire Wire Line
+	4350 2300 5000 2300
+Connection ~ 5000 2300
+Wire Wire Line
+	3950 2300 3400 2300
+Connection ~ 3400 2300
+Wire Wire Line
+	3400 2300 3400 3600
+Wire Wire Line
+	4750 1550 4750 1200
+Wire Wire Line
+	4750 1200 5000 1200
+Connection ~ 5800 1200
+Wire Wire Line
+	5800 1200 5800 2100
+Wire Wire Line
+	6650 1500 6650 1200
+Wire Wire Line
+	6650 1200 5800 1200
+Wire Wire Line
+	5000 1550 5000 1200
+Connection ~ 5000 1200
+Wire Wire Line
+	5000 1200 5800 1200
+Wire Wire Line
+	6400 2900 7450 2900
+Text GLabel 7100 4150 3    50   Input ~ 0
+RXD
+Text GLabel 6950 4150 3    50   Input ~ 0
+TXD
+Text GLabel 7250 4150 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6400 2600 7100 2600
+Wire Wire Line
+	7100 2600 7100 4150
+Wire Wire Line
+	6400 2400 6950 2400
+Wire Wire Line
+	6950 2400 6950 4150
+Wire Wire Line
+	7250 4150 7250 3600
+Wire Wire Line
+	7250 3600 7150 3600
+Connection ~ 7150 3600
+$EndSCHEMATC

@@ -1,0 +1,366 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP-12E U2
+U 1 1 5C31E123
+P 6250 3250
+F 0 "U2" H 6250 4228 50  0000 C CNN
+F 1 "ESP-12E" H 6250 4137 50  0000 C CNN
+F 2 "RF_Module:ESP-12E" H 6250 3250 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 5900 3350 50  0001 C CNN
+	1    6250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR01
+U 1 1 5C31E21D
+P 1850 1550
+F 0 "#PWR01" H 1850 1400 50  0001 C CNN
+F 1 "+12V" H 1865 1723 50  0000 C CNN
+F 2 "" H 1850 1550 50  0001 C CNN
+F 3 "" H 1850 1550 50  0001 C CNN
+	1    1850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5C31E256
+P 2000 4850
+F 0 "#PWR02" H 2000 4600 50  0001 C CNN
+F 1 "GND" H 2005 4677 50  0000 C CNN
+F 2 "" H 2000 4850 50  0001 C CNN
+F 3 "" H 2000 4850 50  0001 C CNN
+	1    2000 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM1117-3.3 U1
+U 1 1 5C31E368
+P 3850 1550
+F 0 "U1" H 3850 1792 50  0000 C CNN
+F 1 "LM1117-3.3" H 3850 1701 50  0000 C CNN
+F 2 "" H 3850 1550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 3850 1550 50  0001 C CNN
+	1    3850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF540N Q3
+U 1 1 5C31E57D
+P 9850 3350
+F 0 "Q3" H 10055 3396 50  0000 L CNN
+F 1 "IRF540N" H 10055 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 10100 3275 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 9850 3350 50  0001 L CNN
+	1    9850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q1
+U 1 1 5C31E6AE
+P 8700 3250
+F 0 "Q1" H 8891 3296 50  0000 L CNN
+F 1 "2N3904" H 8891 3205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8900 3175 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8700 3250 50  0001 L CNN
+	1    8700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3904 Q2
+U 1 1 5C31E851
+P 9200 3800
+F 0 "Q2" H 9391 3846 50  0000 L CNN
+F 1 "2N3904" H 9391 3755 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9400 3725 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9200 3800 50  0001 L CNN
+	1    9200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5C31E8CF
+P 7400 2650
+F 0 "SW2" H 7400 2935 50  0000 C CNN
+F 1 "SW_Push" H 7400 2844 50  0000 C CNN
+F 2 "" H 7400 2850 50  0001 C CNN
+F 3 "" H 7400 2850 50  0001 C CNN
+	1    7400 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5C31EA3B
+P 4600 2650
+F 0 "SW1" H 4600 2935 50  0000 C CNN
+F 1 "SW_Push" H 4600 2844 50  0000 C CNN
+F 2 "" H 4600 2850 50  0001 C CNN
+F 3 "" H 4600 2850 50  0001 C CNN
+	1    4600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3950 3850 3950
+Wire Wire Line
+	2000 3950 2000 4850
+Connection ~ 3850 3950
+Wire Wire Line
+	3850 3950 2000 3950
+Text GLabel 4950 1100 1    50   Input ~ 0
+3v3
+Wire Wire Line
+	4150 1550 4950 1550
+Text GLabel 6250 1150 1    50   Input ~ 0
+3v3
+Wire Wire Line
+	4950 1100 4950 1550
+Wire Wire Line
+	6250 1150 6250 1550
+$Comp
+L Device:R R6
+U 1 1 5C31EE1C
+P 8800 2650
+F 0 "R6" H 8870 2696 50  0000 L CNN
+F 1 "R" H 8870 2605 50  0000 L CNN
+F 2 "" V 8730 2650 50  0001 C CNN
+F 3 "~" H 8800 2650 50  0001 C CNN
+	1    8800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5C31F09E
+P 9250 2650
+F 0 "R7" H 9320 2696 50  0000 L CNN
+F 1 "R" H 9320 2605 50  0000 L CNN
+F 2 "" V 9180 2650 50  0001 C CNN
+F 3 "~" H 9250 2650 50  0001 C CNN
+	1    9250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5C31F1D0
+P 8050 3250
+F 0 "R5" V 7843 3250 50  0000 C CNN
+F 1 "R" V 7934 3250 50  0000 C CNN
+F 2 "" V 7980 3250 50  0001 C CNN
+F 3 "~" H 8050 3250 50  0001 C CNN
+	1    8050 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 3250 8500 3250
+Wire Wire Line
+	8800 2800 8800 2950
+Wire Wire Line
+	9250 2800 9250 3350
+Wire Wire Line
+	9250 3600 9300 3600
+Wire Wire Line
+	9000 3800 9000 2950
+Wire Wire Line
+	9000 2950 8800 2950
+Connection ~ 8800 2950
+Wire Wire Line
+	8800 2950 8800 3050
+$Comp
+L power:GND #PWR03
+U 1 1 5C31F54F
+P 8850 4350
+F 0 "#PWR03" H 8850 4100 50  0001 C CNN
+F 1 "GND" H 8855 4177 50  0000 C CNN
+F 2 "" H 8850 4350 50  0001 C CNN
+F 3 "" H 8850 4350 50  0001 C CNN
+	1    8850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 4000 8850 4000
+Wire Wire Line
+	8850 4000 8850 4350
+Wire Wire Line
+	8800 3450 8800 4000
+Wire Wire Line
+	8800 4000 8850 4000
+Connection ~ 8850 4000
+Wire Wire Line
+	9650 3350 9250 3350
+Connection ~ 9250 3350
+Wire Wire Line
+	9250 3350 9250 3600
+Text GLabel 1850 1850 3    50   Input ~ 0
+12v
+Wire Wire Line
+	1850 1550 1850 1850
+Text GLabel 3350 1100 1    50   Input ~ 0
+12v
+Wire Wire Line
+	3350 1550 3550 1550
+Wire Wire Line
+	3350 1100 3350 1550
+Text GLabel 8950 1500 1    50   Input ~ 0
+12v
+Wire Wire Line
+	8800 2500 8800 1800
+Wire Wire Line
+	9250 2500 9250 1800
+Wire Wire Line
+	8800 1800 8950 1800
+Connection ~ 8950 1800
+Wire Wire Line
+	8950 1800 9250 1800
+Wire Wire Line
+	8950 1500 8950 1800
+$Comp
+L Device:R R2
+U 1 1 5C320C90
+P 5450 2050
+F 0 "R2" H 5520 2096 50  0000 L CNN
+F 1 "R" H 5520 2005 50  0000 L CNN
+F 2 "" V 5380 2050 50  0001 C CNN
+F 3 "~" H 5450 2050 50  0001 C CNN
+	1    5450 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5C32113D
+P 5200 2050
+F 0 "R1" H 5270 2096 50  0000 L CNN
+F 1 "R" H 5270 2005 50  0000 L CNN
+F 2 "" V 5130 2050 50  0001 C CNN
+F 3 "~" H 5200 2050 50  0001 C CNN
+	1    5200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5C32121F
+P 7200 3750
+F 0 "R4" H 7270 3796 50  0000 L CNN
+F 1 "R" H 7270 3705 50  0000 L CNN
+F 2 "" V 7130 3750 50  0001 C CNN
+F 3 "~" H 7200 3750 50  0001 C CNN
+	1    7200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5C3213BB
+P 7100 2000
+F 0 "R3" H 7170 2046 50  0000 L CNN
+F 1 "R" H 7170 1955 50  0000 L CNN
+F 2 "" V 7030 2000 50  0001 C CNN
+F 3 "~" H 7100 2000 50  0001 C CNN
+	1    7100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2150 7100 2650
+Wire Wire Line
+	7100 2650 6850 2650
+Wire Wire Line
+	6850 3550 7200 3550
+Wire Wire Line
+	7200 3550 7200 3600
+Wire Wire Line
+	7200 3900 7200 3950
+Wire Wire Line
+	7200 3950 6250 3950
+Connection ~ 6250 3950
+Wire Wire Line
+	7100 2650 7200 2650
+Connection ~ 7100 2650
+Wire Wire Line
+	7600 2650 7600 3950
+Wire Wire Line
+	7600 3950 7200 3950
+Connection ~ 7200 3950
+Wire Wire Line
+	5650 2850 5200 2850
+Wire Wire Line
+	5200 2850 5200 2200
+Wire Wire Line
+	5650 2650 5450 2650
+Wire Wire Line
+	5450 2650 5450 2200
+Wire Wire Line
+	3850 1850 3850 2650
+Wire Wire Line
+	4800 2650 5450 2650
+Connection ~ 5450 2650
+Wire Wire Line
+	4400 2650 3850 2650
+Connection ~ 3850 2650
+Wire Wire Line
+	3850 2650 3850 3950
+Wire Wire Line
+	5200 1900 5200 1550
+Wire Wire Line
+	5200 1550 5450 1550
+Connection ~ 6250 1550
+Wire Wire Line
+	6250 1550 6250 2450
+Wire Wire Line
+	7100 1850 7100 1550
+Wire Wire Line
+	7100 1550 6250 1550
+Wire Wire Line
+	5450 1900 5450 1550
+Connection ~ 5450 1550
+Wire Wire Line
+	5450 1550 6250 1550
+Wire Wire Line
+	6850 3250 7900 3250
+Text GLabel 7550 4500 3    50   Input ~ 0
+RXD
+Text GLabel 7400 4500 3    50   Input ~ 0
+TXD
+Text GLabel 7700 4500 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6850 2950 7550 2950
+Wire Wire Line
+	7550 2950 7550 4500
+Wire Wire Line
+	6850 2750 7400 2750
+Wire Wire Line
+	7400 2750 7400 4500
+Wire Wire Line
+	7700 4500 7700 3950
+Wire Wire Line
+	7700 3950 7600 3950
+Connection ~ 7600 3950
+Wire Wire Line
+	9950 3550 9950 4000
+Wire Wire Line
+	9950 4000 9300 4000
+Connection ~ 9300 4000
+Text GLabel 10150 2500 2    50   Input ~ 0
+OUT-
+Text GLabel 10150 2200 2    50   Input ~ 0
+OUT+
+Wire Wire Line
+	10150 2200 10150 1800
+Wire Wire Line
+	10150 1800 9250 1800
+Connection ~ 9250 1800
+Wire Wire Line
+	10150 2500 9950 2500
+Wire Wire Line
+	9950 2500 9950 3150
+$EndSCHEMATC
