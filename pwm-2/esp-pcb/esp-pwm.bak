@@ -26,17 +26,6 @@ F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manua
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR01
-U 1 1 5C31E21D
-P 550 1250
-F 0 "#PWR01" H 550 1100 50  0001 C CNN
-F 1 "+12V" H 565 1423 50  0000 C CNN
-F 2 "" H 550 1250 50  0001 C CNN
-F 3 "" H 550 1250 50  0001 C CNN
-	1    550  1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR02
 U 1 1 5C31E256
 P 700 4550
@@ -165,16 +154,10 @@ Wire Wire Line
 Connection ~ 9250 2650
 Wire Wire Line
 	9250 2650 9250 2900
-Text GLabel 550  1550 3    50   Input ~ 0
-12v
-Wire Wire Line
-	550  1250 550  1550
-Text GLabel 850  800  1    50   Input ~ 0
+Text GLabel 850  1250 0    50   Input ~ 0
 12v
 Wire Wire Line
 	850  1250 1000 1250
-Wire Wire Line
-	850  800  850  1250
 Text GLabel 9000 1500 1    50   Input ~ 0
 12v
 $Comp
@@ -529,4 +512,70 @@ Wire Wire Line
 	1850 1800 1850 1900
 Wire Wire Line
 	1850 1900 1350 1900
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 5C34B847
+P 7400 700
+F 0 "J2" V 7460 840 50  0000 L CNN
+F 1 "Conn_01x03_Male" V 7551 840 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 7400 700 50  0001 C CNN
+F 3 "~" H 7400 700 50  0001 C CNN
+	1    7400 700 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5C34B967
+P 8050 700
+F 0 "J3" H 8130 692 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 8130 601 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8050 700 50  0001 C CNN
+F 3 "~" H 8050 700 50  0001 C CNN
+	1    8050 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5C34B9F8
+P 8650 700
+F 0 "J4" H 8730 692 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 8730 601 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8650 700 50  0001 C CNN
+F 3 "~" H 8650 700 50  0001 C CNN
+	1    8650 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5C34BA95
+P 6750 700
+F 0 "J1" V 6716 512 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 6625 512 50  0000 R CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6750 700 50  0001 C CNN
+F 3 "~" H 6750 700 50  0001 C CNN
+	1    6750 700 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6750 950  3    50   Input ~ 0
+12v
+Text GLabel 6850 950  3    50   Input ~ 0
+GND
+Wire Wire Line
+	6750 900  6750 950 
+Wire Wire Line
+	6850 900  6850 950 
+Text GLabel 8050 900  3    50   Input ~ 0
+OUT1+
+Text GLabel 8150 900  3    50   Input ~ 0
+OUT1-
+Text GLabel 8650 900  3    50   Input ~ 0
+OUT2+
+Text GLabel 8750 900  3    50   Input ~ 0
+OUT2-
+Text GLabel 7300 900  3    50   Input ~ 0
+TXD
+Text GLabel 7400 900  3    50   Input ~ 0
+RXD
+Text GLabel 7500 900  3    50   Input ~ 0
+GND
 $EndSCHEMATC
