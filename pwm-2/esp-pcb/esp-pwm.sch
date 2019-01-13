@@ -64,7 +64,7 @@ U 1 1 5C31E6AE
 P 8700 2550
 F 0 "Q1" H 8891 2596 50  0000 L CNN
 F 1 "2N3904" H 8891 2505 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8900 2475 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 8900 2475 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8700 2550 50  0001 L CNN
 	1    8700 2550
 	1    0    0    -1  
@@ -75,7 +75,7 @@ U 1 1 5C31E851
 P 9200 3100
 F 0 "Q2" H 9391 3146 50  0000 L CNN
 F 1 "2N3904" H 9391 3055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9400 3025 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 9400 3025 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9200 3100 50  0001 L CNN
 	1    9200 3100
 	1    0    0    -1  
@@ -109,7 +109,7 @@ U 1 1 5C31EE1C
 P 8800 1950
 F 0 "R6" H 8870 1996 50  0000 L CNN
 F 1 "1k" H 8870 1905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 8730 1950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8730 1950 50  0001 C CNN
 F 3 "~" H 8800 1950 50  0001 C CNN
 	1    8800 1950
 	1    0    0    -1  
@@ -120,7 +120,7 @@ U 1 1 5C31F09E
 P 9250 1950
 F 0 "R7" H 9320 1996 50  0000 L CNN
 F 1 "500" H 9320 1905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 9180 1950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9180 1950 50  0001 C CNN
 F 3 "~" H 9250 1950 50  0001 C CNN
 	1    9250 1950
 	1    0    0    -1  
@@ -131,7 +131,7 @@ U 1 1 5C31F1D0
 P 8050 2550
 F 0 "R5" V 7843 2550 50  0000 C CNN
 F 1 "200" V 7934 2550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 7980 2550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7980 2550 50  0001 C CNN
 F 3 "~" H 8050 2550 50  0001 C CNN
 	1    8050 2550
 	0    1    1    0   
@@ -188,7 +188,7 @@ U 1 1 5C32121F
 P 4600 3500
 F 0 "R4" H 4670 3546 50  0000 L CNN
 F 1 "100k" H 4670 3455 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4530 3500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4530 3500 50  0001 C CNN
 F 3 "~" H 4600 3500 50  0001 C CNN
 	1    4600 3500
 	1    0    0    -1  
@@ -348,7 +348,7 @@ U 1 1 5C359B35
 P 8700 4700
 F 0 "Q4" H 8891 4746 50  0000 L CNN
 F 1 "2N3904" H 8891 4655 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8900 4625 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 8900 4625 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 8700 4700 50  0001 L CNN
 	1    8700 4700
 	1    0    0    -1  
@@ -359,7 +359,7 @@ U 1 1 5C359B3C
 P 9200 5250
 F 0 "Q5" H 9391 5296 50  0000 L CNN
 F 1 "2N3904" H 9391 5205 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9400 5175 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 9400 5175 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 9200 5250 50  0001 L CNN
 	1    9200 5250
 	1    0    0    -1  
@@ -370,7 +370,7 @@ U 1 1 5C359B43
 P 8800 4100
 F 0 "R9" H 8870 4146 50  0000 L CNN
 F 1 "1k" H 8870 4055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 8730 4100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 8730 4100 50  0001 C CNN
 F 3 "~" H 8800 4100 50  0001 C CNN
 	1    8800 4100
 	1    0    0    -1  
@@ -381,7 +381,7 @@ U 1 1 5C359B4A
 P 9250 4100
 F 0 "R10" H 9320 4146 50  0000 L CNN
 F 1 "500" H 9320 4055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 9180 4100 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 9180 4100 50  0001 C CNN
 F 3 "~" H 9250 4100 50  0001 C CNN
 	1    9250 4100
 	1    0    0    -1  
@@ -392,7 +392,7 @@ U 1 1 5C359B51
 P 8050 4700
 F 0 "R8" V 7843 4700 50  0000 C CNN
 F 1 "200" V 7934 4700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 7980 4700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 7980 4700 50  0001 C CNN
 F 3 "~" H 8050 4700 50  0001 C CNN
 	1    8050 4700
 	0    1    1    0   
@@ -475,7 +475,7 @@ U 1 1 5C360957
 P 1850 1650
 F 0 "C2" H 1968 1696 50  0000 L CNN
 F 1 "100u" H 1968 1605 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 1888 1500 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1888 1500 50  0001 C CNN
 F 3 "~" H 1850 1650 50  0001 C CNN
 	1    1850 1650
 	1    0    0    -1  
@@ -486,7 +486,7 @@ U 1 1 5C3609F0
 P 1000 1550
 F 0 "C1" H 1115 1596 50  0000 L CNN
 F 1 "100n" H 1115 1505 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 1038 1400 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 1038 1400 50  0001 C CNN
 F 3 "~" H 1000 1550 50  0001 C CNN
 	1    1000 1550
 	1    0    0    -1  
@@ -518,7 +518,7 @@ U 1 1 5C34B847
 P 7400 700
 F 0 "J2" V 7460 840 50  0000 L CNN
 F 1 "Conn_01x03_Male" V 7551 840 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 7400 700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 7400 700 50  0001 C CNN
 F 3 "~" H 7400 700 50  0001 C CNN
 	1    7400 700 
 	0    1    1    0   
@@ -568,9 +568,9 @@ Text GLabel 8050 900  3    50   Input ~ 0
 OUT1+
 Text GLabel 8150 900  3    50   Input ~ 0
 OUT1-
-Text GLabel 8650 900  3    50   Input ~ 0
-OUT2+
 Text GLabel 8750 900  3    50   Input ~ 0
+OUT2+
+Text GLabel 8650 900  3    50   Input ~ 0
 OUT2-
 Text GLabel 7300 900  3    50   Input ~ 0
 TXD
@@ -578,17 +578,4 @@ Text GLabel 7400 900  3    50   Input ~ 0
 RXD
 Text GLabel 7500 900  3    50   Input ~ 0
 GND
-$Comp
-L power:+12V #PWR?
-U 1 1 5C36ECC0
-P 1000 800
-F 0 "#PWR?" H 1000 650 50  0001 C CNN
-F 1 "+12V" H 1015 973 50  0000 C CNN
-F 2 "" H 1000 800 50  0001 C CNN
-F 3 "" H 1000 800 50  0001 C CNN
-	1    1000 800 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 800  1000 1250
 $EndSCHEMATC
