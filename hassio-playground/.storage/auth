@@ -1,0 +1,55 @@
+{
+    "data": {
+        "credentials": [
+            {
+                "auth_provider_id": null,
+                "auth_provider_type": "homeassistant",
+                "data": {
+                    "username": "chromygabor"
+                },
+                "id": "8e85d47226b64a3c85652207b0f29808",
+                "user_id": "9bf6ee950a6640d89ad9e64b512b74b8"
+            }
+        ],
+        "groups": [
+            {
+                "id": "system-admin",
+                "name": "Administrators"
+            },
+            {
+                "id": "system-read-only",
+                "name": "Read Only"
+            }
+        ],
+        "refresh_tokens": [
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "http://localhost:8123/",
+                "client_name": null,
+                "created_at": "2019-02-01T10:25:17.966734+00:00",
+                "id": "f04480d1b5114d17b32839fb2134dba5",
+                "jwt_key": "8c5a401ac553646ae72325c50c045e15c39fa6628c941e3f0f1942459822e131d28cee54263649b6554fd9bc7f55cad514eab244ab808331a58053ca89f29770",
+                "last_used_at": "2019-02-01T15:27:44.266565+00:00",
+                "last_used_ip": "172.17.0.1",
+                "token": "c78358684912a0621989c0d1a88fc8606f786f184a1c7cfd12bf610940e34a439acdfa9bda908a1fc8750a212171cb6279ef037befbfa34a95f4725510f98b7e",
+                "token_type": "normal",
+                "user_id": "9bf6ee950a6640d89ad9e64b512b74b8"
+            }
+        ],
+        "users": [
+            {
+                "group_ids": [
+                    "system-admin"
+                ],
+                "id": "9bf6ee950a6640d89ad9e64b512b74b8",
+                "is_active": true,
+                "is_owner": true,
+                "name": "Chromy G\u00e1bor",
+                "system_generated": false
+            }
+        ]
+    },
+    "key": "auth",
+    "version": 1
+}

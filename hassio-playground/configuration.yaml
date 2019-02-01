@@ -1,0 +1,66 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  #### Initial location values for latitude, logitude, elevation, usint_system, and time_zone are calculated from the IP address used when installation occured.  
+  #### Easiest place to get precice info is - http://www.gps-coordinates.net/
+  latitude: 39.9872
+  longitude: -75.2471
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 65
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/New_York
+
+  #packages: !include_dir_named packages
+# Show links to resources in log and frontend
+#### This will be removed once you are comfortable with the front end.  It includes links back to home-assistant.io for help topics.
+introduction:
+
+# Enables the frontend
+#### 99% chance you will never need to disable this.
+#### There are no configuration values within the frontend: component 
+frontend:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  #### This component controls which port Home Assistant run on, SSL configuration, and other tpc/ip and web server configurations.  We will walk through this in future videos.
+  #### Component definition https://home-assistant.io/components/http/
+  # api_password: PASSWORD
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+#### This component will try to automatically add 11 different uPnP devices.  This includes Chromecast, Wemo Switches, Hue Lights, Netgear routers, Plex, Viera, Roku, Sonos, Yamaha media player, Squeezebox, DirectTV
+#### I have found this to work about 75% of the time, also this can be slow.  I recommend adding the components manually (We will add Sonos, Philips Hue in the next walk-through)
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time.
+#### this is great for seeing usage overtime, and understanding when things might not be working exactly the way you want them to
+##   If you are having resource issues and do not use this function, it is safe to disable.
+history:
+
+# View all events in a logbook
+#### this is great for seeing usage overtime, and understanding when things might not be working exactly the way you want them to.  Similar in a way to history
+logbook:
+
+# Track the sun
+sun:
+
+# Weather Prediction
+####  This is the default weather sensor.  It gets it's data from the Norwegian Meteorological Institute.  It is a good demo, but we will change to Weather Underground in the next walk-through
+####  The sensor component can show more than weather, it shows state information (such as temprature) from other entities.  We will walk through entities in the next walk-throughs
+sensor:
+  platform: yr
+
+logger:
+  default: debug
+
+mqtt:
+  password: homeassistant
+  port: 1883

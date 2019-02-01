@@ -1,0 +1,13 @@
+{
+    "data": {
+        "salt": "17503f7fe208c39314ef1bfa468be7a0a2cad697d0285f8fb044db7f5d955c59",
+        "users": [
+            {
+                "password": "JDJiJDEyJEpWS29OLlB6SldFOTFaU0FNSGtBaXVaajlmU0kwR2JwUll0TGFqaGdqR3o3QWVGeGxhRmF1",
+                "username": "chromygabor"
+            }
+        ]
+    },
+    "key": "auth_provider.homeassistant",
+    "version": 1
+}
