@@ -142,6 +142,8 @@ void setup() {
   pinMode(GreenLed, OUTPUT); //debug to led 13
   ticker.attach(0.5, tick);
   initWifi();
+  ticker.detach();
+
   Serial.printf("%s connected to: ", DEVICE_NAME);
   Serial.print(WiFi.SSID());
   Serial.print(", ip:");
@@ -187,9 +189,6 @@ void reconnect() {
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
-      Serial.println(" try again in 5 seconds");
-      // Wait 5 seconds before retrying
-      delay(5000);
     }
   }
 }
@@ -198,6 +197,7 @@ void loop() {
   button.process();
 
   if (!client.connected()) {
+      ticker.attach(0.5, tick);
       reconnect();
       if(client.connected()) {
         ticker.detach();
