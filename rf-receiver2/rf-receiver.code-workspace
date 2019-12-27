@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "D:\\Cry\\Development\\sm\\pwm\\esp-code",
+			"name": "esp-code"
+		}
+	],
+	"settings": {
+		"terminal.integrated.env.windows": {
+			"PATH": "C:\\Users\\cry\\.platformio\\penv\\Scripts;C:\\Users\\cry\\.platformio\\penv;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;D:\\Programs\\Python27\\;D:\\Programs\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;d:\\Programs\\gradle-2.14\\bin\\;C:\\Program Files\\Perforce\\DVCS\\;C:\\Program Files (x86)\\Microsoft Emulator Manager\\1.0\\;C:\\Program Files (x86)\\Boxcryptor\\bin\\;C:\\Program Files\\dotnet\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Programs\\LLVM\\bin;D:\\Programs\\node-js\\;c:\\Program Files\\Git\\;C:\\Users\\cry\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Programs\\atom\\bin;D:\\Programs\\Microsoft VS Code\\bin;D:\\Programs\\cmder\\;D:\\Programs\\git\\bin;C:\\Users\\cry\\AppData\\Roaming\\npm;C:\\Program Files\\Docker\\Docker\\resources\\bin;;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;D:\\Programs\\Python27\\;D:\\Programs\\Python27\\Scripts;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;d:\\Programs\\gradle-2.14\\bin\\;C:\\Program Files\\Perforce\\DVCS\\;C:\\Program Files (x86)\\Microsoft Emulator Manager\\1.0\\;C:\\Program Files (x86)\\Boxcryptor\\bin\\;C:\\Program Files\\dotnet\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Programs\\LLVM\\bin;D:\\Programs\\node-js\\;c:\\Program Files\\Git\\;C:\\Users\\cry\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Programs\\atom\\bin;D:\\Programs\\Microsoft VS Code\\bin;D:\\Programs\\cmder\\;D:\\Programs\\git\\bin;C:\\Users\\cry\\AppData\\Roaming\\npm;C:\\Program Files\\Docker\\Docker\\resources\\bin;",
+			"PLATFORMIO_CALLER": "vscode"
+		}
+	}
+}
