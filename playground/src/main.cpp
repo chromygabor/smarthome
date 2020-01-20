@@ -145,7 +145,6 @@ void onPress(Button& b) {
 
 void onRelease(Button& b) {
   if(activePhase == 1) {
-    Serial.printf("[%s] Switching\n", DEVICE_NAME);
     mqttSwitch.triggerSwitch();
     activePhase = 0;
   } else if(activePhase == 2) {
