@@ -1,0 +1,74 @@
+{
+    "data": [
+        {
+            "last_seen": "2019-02-04T21:20:32.001794+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Increase Light 1 Brightness",
+                    "last_triggered": "2019-02-03T09:07:42.050440+00:00"
+                },
+                "context": {
+                    "id": "fe73dd77d6b34d73bf0dfc4ad78b1cee",
+                    "user_id": null
+                },
+                "entity_id": "automation.increase_light_1_brightness",
+                "last_changed": "2019-02-03T09:07:16.072159+00:00",
+                "last_updated": "2019-02-03T09:07:42.050555+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-02-04T21:20:32.001794+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Light 1",
+                    "supported_features": 1
+                },
+                "context": {
+                    "id": "7e765552936a4221be71dad9c58523f2",
+                    "user_id": null
+                },
+                "entity_id": "light.light_1",
+                "last_changed": "2019-02-03T09:07:15.670976+00:00",
+                "last_updated": "2019-02-03T09:07:15.670976+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2019-02-02T23:50:27.909286+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Increase Lounge Brightness",
+                    "last_triggered": "2019-02-02T23:47:36.074897+00:00"
+                },
+                "context": {
+                    "id": "3179f4d1916e40ff84792cea387e91a1",
+                    "user_id": null
+                },
+                "entity_id": "automation.increase_lounge_brightness",
+                "last_changed": "2019-02-02T23:45:48.782569+00:00",
+                "last_updated": "2019-02-02T23:47:36.074985+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2019-02-02T23:15:40.430913+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "MQTT Light",
+                    "supported_features": 1
+                },
+                "context": {
+                    "id": "870e57756bad40d0bf0cd0ef1dd21cda",
+                    "user_id": null
+                },
+                "entity_id": "light.mqtt_light",
+                "last_changed": "2019-02-02T23:15:39.893109+00:00",
+                "last_updated": "2019-02-02T23:15:39.893109+00:00",
+                "state": "off"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

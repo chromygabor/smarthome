@@ -1,1 +1,1 @@
-docker run -d -p 8123:8123 -p 1883:1883 -v D:/Development/hassio:/config homeassistant/home-assistant
+docker run --name=homeassistant --rm -d -p 8123:8123 -p 1883:1883 -p 8181:8181 -v  %cd%:/config homeassistant/home-assistant

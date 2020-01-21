@@ -64,3 +64,25 @@ logger:
 mqtt:
   password: homeassistant
   port: 1883
+
+light:
+  - platform: mqtt
+    name: "Light 1"
+    command_topic: light/command
+    state_topic: light/state
+    brightness_command_topic: light/brightness_command
+    brightness_state_topic: light/brightness_state
+
+
+# AUTOMATION
+automation:
+  - alias: Increase Light 1 Brightness
+    trigger:
+      platform: mqtt
+      topic: button
+      payload: 'pressed'
+    action:
+      service: light.turn_on
+      entity_id: light.light_1
+      data_template:
+        brightness: "{{ state_attr('light.light_1', 'brightness')|int + 10}}"
